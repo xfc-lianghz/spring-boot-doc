@@ -1,0 +1,155 @@
+2017-09-06 20:08:04.454 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 9696 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:08:04.480 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:08:05.594 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6809bdf8: startup date [Wed Sep 06 20:08:05 CST 2017]; root of context hierarchy
+2017-09-06 20:08:09.274 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:08:09.307 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:08:09.309 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:08:09.567 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:08:09.568 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 3974 ms
+2017-09-06 20:08:09.945 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:08:09.962 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:08:09.963 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:08:09.964 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:08:09.965 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:08:10.706 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6809bdf8: startup date [Wed Sep 06 20:08:05 CST 2017]; root of context hierarchy
+2017-09-06 20:08:10.838 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.itstyle.doc.web.IndexController.index()
+2017-09-06 20:08:10.844 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-06 20:08:10.845 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-06 20:08:10.933 INFO  com.itstyle.doc.Application Line:19  - 自定义静态资源目录
+2017-09-06 20:08:10.957 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:08:10.958 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:08:11.041 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:08:12.548 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2017-09-06 20:08:12.751 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:198 - Tomcat started on port(s): 8080 (http)
+2017-09-06 20:08:12.758 INFO  com.itstyle.doc.Application Line:57  - Started Application in 10.469 seconds (JVM running for 12.295)
+2017-09-06 20:08:12.758 INFO  com.itstyle.doc.Application Line:24  - 项目启动 
+2017-09-06 20:08:29.385 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-06 20:08:29.386 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-06 20:08:29.428 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-09-06 20:08:29.630 INFO  com.itstyle.doc.web.IndexController Line:14  - 首页
+2017-09-06 20:09:46.915 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 4756 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:09:46.961 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:09:47.542 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7edfb412: startup date [Wed Sep 06 20:09:47 CST 2017]; root of context hierarchy
+2017-09-06 20:09:51.717 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b7e609eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 20:09:52.440 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:09:52.461 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:09:52.463 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:09:52.622 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:09:52.623 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 5081 ms
+2017-09-06 20:09:53.083 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:09:53.088 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:09:53.089 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:09:53.090 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:09:53.090 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:09:53.268 INFO  org.apache.catalina.core.StandardService Line:179 - Stopping service Tomcat
+2017-09-06 20:09:53.433 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer Line:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-06 20:11:02.314 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 9572 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:11:02.322 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:11:02.739 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 5548 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:11:02.766 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:11:03.632 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c153e96: startup date [Wed Sep 06 20:11:03 CST 2017]; root of context hierarchy
+2017-09-06 20:11:03.697 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d612394: startup date [Wed Sep 06 20:11:03 CST 2017]; root of context hierarchy
+2017-09-06 20:11:07.205 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3002d797] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 20:11:08.142 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:11:08.196 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:11:08.198 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:11:08.530 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f18bdaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 20:11:08.632 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:11:08.633 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 5001 ms
+2017-09-06 20:11:09.396 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:11:09.402 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:11:09.403 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:11:09.404 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:11:09.404 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:11:09.513 INFO  org.apache.catalina.core.StandardService Line:179 - Stopping service Tomcat
+2017-09-06 20:11:09.637 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:11:09.671 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:11:09.674 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:11:09.724 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer Line:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-06 20:11:09.932 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:11:09.933 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 6236 ms
+2017-09-06 20:11:10.386 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:11:10.401 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:11:10.402 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:11:10.403 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:11:10.404 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:11:10.524 INFO  org.apache.catalina.core.StandardService Line:179 - Stopping service Tomcat
+2017-09-06 20:11:10.572 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer Line:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-09-06 20:12:08.201 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 8288 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:12:08.259 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:12:08.813 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b937e: startup date [Wed Sep 06 20:12:08 CST 2017]; root of context hierarchy
+2017-09-06 20:12:11.502 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:12:11.520 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:12:11.522 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:12:11.685 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:12:11.686 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 2872 ms
+2017-09-06 20:12:11.965 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:12:11.974 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:12:11.976 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:12:11.976 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:12:11.977 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:12:12.526 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b937e: startup date [Wed Sep 06 20:12:08 CST 2017]; root of context hierarchy
+2017-09-06 20:12:12.650 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.itstyle.doc.web.IndexController.index()
+2017-09-06 20:12:12.656 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-06 20:12:12.657 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-06 20:12:12.696 INFO  com.itstyle.doc.Application Line:19  - 自定义静态资源目录
+2017-09-06 20:12:12.713 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:12:12.714 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:12:12.882 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:12:14.187 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2017-09-06 20:12:14.298 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:198 - Tomcat started on port(s): 8080 (http)
+2017-09-06 20:12:14.306 INFO  com.itstyle.doc.Application Line:57  - Started Application in 7.218 seconds (JVM running for 7.934)
+2017-09-06 20:12:14.307 INFO  com.itstyle.doc.Application Line:24  - 项目启动 
+2017-09-06 20:12:18.723 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-06 20:12:18.724 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-06 20:12:18.756 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2017-09-06 20:12:18.808 INFO  com.itstyle.doc.web.IndexController Line:14  - 首页
+2017-09-06 20:12:35.810 INFO  com.itstyle.doc.web.IndexController Line:14  - 首页
+2017-09-06 20:12:51.969 INFO  com.itstyle.doc.web.IndexController Line:14  - 首页
+2017-09-06 20:38:12.058 INFO  com.itstyle.doc.Application Line:48  - Starting Application on WIN-20131015XNT with PID 6316 (D:\ACTS\spring-boot-doc\target\classes started by Administrator in D:\ACTS\spring-boot-doc)
+2017-09-06 20:38:12.063 INFO  com.itstyle.doc.Application Line:641 - The following profiles are active: dev
+2017-09-06 20:38:12.660 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35ba47d3: startup date [Wed Sep 06 20:38:12 CST 2017]; root of context hierarchy
+2017-09-06 20:38:14.953 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c9dae64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-06 20:38:15.539 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2017-09-06 20:38:15.561 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2017-09-06 20:38:15.563 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-09-06 20:38:15.697 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring embedded WebApplicationContext
+2017-09-06 20:38:15.698 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 3038 ms
+2017-09-06 20:38:16.332 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-06 20:38:16.338 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-06 20:38:16.339 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-06 20:38:16.340 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-06 20:38:16.340 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-06 20:38:17.123 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-06 20:38:17.157 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-06 20:38:17.393 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-06 20:38:17.395 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2017-09-06 20:38:17.398 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2017-09-06 20:38:17.552 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-06 20:38:18.732 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-06 20:38:19.160 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2017-09-06 20:38:19.229 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-06 20:38:20.018 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35ba47d3: startup date [Wed Sep 06 20:38:12 CST 2017]; root of context hierarchy
+2017-09-06 20:38:20.164 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.itstyle.doc.web.IndexController.index()
+2017-09-06 20:38:20.169 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-06 20:38:20.170 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-06 20:38:20.205 INFO  com.itstyle.doc.Application Line:19  - 自定义静态资源目录
+2017-09-06 20:38:20.219 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:38:20.220 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:38:20.290 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-06 20:38:22.334 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2017-09-06 20:38:22.422 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:198 - Tomcat started on port(s): 8080 (http)
+2017-09-06 20:38:22.429 INFO  com.itstyle.doc.Application Line:57  - Started Application in 11.453 seconds (JVM running for 12.162)
+2017-09-06 20:38:22.429 INFO  com.itstyle.doc.Application Line:24  - 项目启动 
+2017-09-06 20:38:43.274 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/spring-boot-doc] Line:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-06 20:38:43.275 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-06 20:38:43.310 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-09-06 20:38:49.007 INFO  com.itstyle.doc.web.IndexController Line:14  - 首页
