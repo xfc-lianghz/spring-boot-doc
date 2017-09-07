@@ -6,8 +6,8 @@ package com.itstyle.doc.common.constans;
  */
 public enum Option {
 	ENABLED_REGISTER("ENABLED_REGISTER","是否启用注册"),
-	WECHAT("ENABLE_DOCUMENT_HISTORY","是否启用文档历史"),
-	UNION("ENABLED_CAPTCHA","是否启用验证码"),
+	ENABLE_DOCUMENT_HISTORY("ENABLE_DOCUMENT_HISTORY","是否启用文档历史"),
+	ENABLED_CAPTCHA("ENABLED_CAPTCHA","是否启用验证码"),
 	ENABLE_ANONYMOUS("ENABLE_ANONYMOUS","启用匿名访问"),
 	SITE_NAME("SITE_NAME","站点名称");
 	
