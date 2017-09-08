@@ -9,4 +9,5 @@ import com.itstyle.doc.model.Member;
  */
 public interface MemberRepository extends JpaRepository<Member, Integer> {
 	Member findByAccount(String account);
+	Member findByEmail(String email);
 }

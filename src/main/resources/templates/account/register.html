@@ -13,7 +13,8 @@
     <link th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
     <link th:href="@{/css/main.css}" rel="stylesheet">
     <script th:src="@{/jquery/1.12.4/jquery.min.js}"></script>
-   
+    <script th:src="@{/html5shiv/3.7.3/html5shiv.min.js}"></script>
+    <script th:src="@{/respond.js/1.4.2/respond.min.js}"></script>
 </head>
 <body class="manual-container">
 <header class="navbar navbar-static-top smart-nav navbar-fixed-top manual-header" role="banner">
@@ -41,7 +42,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" class="form-control" placeholder="密码" name="password1" id="password1" autocomplete="off">
+                        <input type="password" class="form-control" placeholder="密码" name="password" id="password1" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
@@ -49,7 +50,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" class="form-control" placeholder="确认密码" name="password2" id="password2" autocomplete="off">
+                        <input type="password" class="form-control" placeholder="确认密码" id="password2" autocomplete="off">
                     </div>
                 </div>
                 <div class="form-group">
@@ -112,12 +113,12 @@
                     return false;
 
                 }else if(password === ""){
-                    $("#password").focus().tooltip({title : '密码不能为空',trigger : 'manual'})
+                    $("#password1").focus().tooltip({title : '密码不能为空',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
                 }else if(confirmPassword !== password){
-                    $("#confirm_password").focus().tooltip({title : '确认密码不正确',trigger : 'manual'})
+                    $("#password2").focus().tooltip({title : '确认密码不正确',trigger : 'manual'})
                         .tooltip('show')
                         .parents('.form-group').addClass('has-error');
                     return false;
@@ -138,12 +139,12 @@
             },
             success : function (res) {
                 $("button[type='submit']").button('reset');
-                if(res.errcode === 0){
+                if(res.code === "success"){
                     window.location = "login";
                 }else{
                     $("#captcha-img").click();
                     $("#code").val('');
-                    layer.msg(res.message);
+                    layer.msg(res.msg);
                 }
             }
         });

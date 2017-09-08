@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.itstyle.doc.common.utils.DateUtil;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,25 +28,25 @@ public class Member {
 	@Column(nullable = false)
     private String password;
 	@Column(nullable = false)
-    private String authMethod;
+    private String authMethod="local";
 	@Column(nullable = true)
-    private String description;
+    private String description="";
 	
 	@Column(nullable = false)
     private String email;
 	@Column(nullable = false)
     private String phone;
 	@Column(nullable = true)
-    private String avatar;
+    private String avatar="/images/headimgurl.jpg";
 	@Column(nullable = false)
-    private Integer role;
+    private Integer role=1;
 	
 	@Column(nullable = false)
-    private Integer status;
+    private Integer status=1;
 	@Column(nullable = false)
-    private Timestamp createTime;
+    private Timestamp createTime=DateUtil.getTimestamp();
 	@Column(nullable = false)
-    private Integer create_at;
+    private Integer createAt=0;
 	@Column(nullable = true)
     private Timestamp lastLoginTime;
 }

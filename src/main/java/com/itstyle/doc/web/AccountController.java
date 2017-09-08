@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.itstyle.doc.common.constans.Constans;
 import com.itstyle.doc.common.constans.Option;
+import com.itstyle.doc.common.utils.DateUtil;
 import com.itstyle.doc.common.utils.MD5Util;
 import com.itstyle.doc.common.utils.Result;
 import com.itstyle.doc.model.Member;
@@ -72,8 +73,9 @@ public class AccountController {
 		 Member user = memberRepository.findByAccount(member.getAccount());
 		 String vrifyCode =  (String) request.getSession().getAttribute("vrifyCode");
 		 if(vrifyCode.equalsIgnoreCase(code)){
-			 if(user!=null){
-				
+			 if(user==null){
+				 memberRepository.save(member);
+				 result.setCode(Constans.SUCCESS);
 			 }else{
 				 result.setCode(Constans.ERROR);
 				 result.setMsg("账号已存在");
@@ -89,5 +91,24 @@ public class AccountController {
 		 logger.info("找回密码");
 		 map.addAttribute("SITE_NAME", Constans.mapOptions.get(Option.SITE_NAME.getCode()));
 		 return "account/find_password_setp1";
+    }
+	@RequestMapping(value="find_password",method=RequestMethod.POST)
+    public @ResponseBody Result  findPassword(String email, String code,HttpServletRequest request) {
+		 logger.info("{}:找回密码",email);
+		 Result result = new Result();
+		 Member user = memberRepository.findByEmail(email);
+		 String vrifyCode =  (String) request.getSession().getAttribute("vrifyCode");
+		 if(vrifyCode.equalsIgnoreCase(code)){
+			 if(user!=null){
+				 result.setCode(Constans.SUCCESS);
+			 }else{
+				 result.setCode(Constans.ERROR);
+				 result.setMsg("账号不存在");
+			 }
+		 }else{
+			 result.setCode(Constans.ERROR);
+			 result.setMsg("验证码错误");
+		 }
+		 return result;
     }
 }
