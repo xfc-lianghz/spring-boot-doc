@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.itstyle.doc.common.constans.Constans;
 import com.itstyle.doc.common.constans.Option;
-import com.itstyle.doc.common.utils.DateUtil;
 import com.itstyle.doc.common.utils.MD5Util;
 import com.itstyle.doc.common.utils.Result;
 import com.itstyle.doc.model.Member;
@@ -111,4 +110,9 @@ public class AccountController {
 		 }
 		 return result;
     }
+	@RequestMapping(value="logout",method=RequestMethod.GET)
+	public String logout(HttpServletRequest request){
+		request.getSession().setAttribute(Constans.CURRENT_USER, null);
+		return "redirect:index";
+	}
 }
