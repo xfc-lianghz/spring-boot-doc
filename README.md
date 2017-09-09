@@ -53,23 +53,22 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 │  │  │  └─com
 │  │  │      └─itstyle
 │  │  │          └─doc
-│  │  │              │  Application.java
+│  │  │              │  Application.java --启动类
 │  │  │              │  
-│  │  │              ├─common
+│  │  │              ├─common  --公用包
 │  │  │              │  ├─constans
 │  │  │              │  │      
 │  │  │              │  ├─interceptor
 │  │  │              │  │      
 │  │  │              │  └─utils
 │  │  │              │          
-│  │  │              ├─model
+│  │  │              ├─model  --实体类
 │  │  │              │      
-│  │  │              ├─repository
+│  │  │              ├─repository --数据访问层
 │  │  │              │      
-│  │  │              ├─utils
-│  │  │              └─web
+│  │  │              └─web  -- 控制访问层
 │  │  │                      
-│  │  ├─resources
+│  │  ├─resources  -- 系统配置 
 │  │  │  │  application-dev.properties
 │  │  │  │  application-prod.properties
 │  │  │  │  application-test.properties
@@ -77,13 +76,13 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 │  │  │  │  kaptcha.xml
 │  │  │  │  logback-spring.xml
 │  │  │  │  
-│  │  │  ├─sql
+│  │  │  ├─sql -- 数据库文件
 │  │  │  │      
-│  │  │  ├─static
+│  │  │  ├─static -- 前端插件
 │  │  │  │          
-│  │  │  ├─templates
+│  │  │  ├─templates -- 页面访问模版
 │  │  │  │          
-│  │  │  └─uploads
+│  │  │  └─uploads -- 上传目录
 │  │  │              
 │  │  └─webapp
 │  │      │  index.jsp
