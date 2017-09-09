@@ -3,7 +3,6 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import com.itstyle.doc.model.Member;
 /**
@@ -16,7 +15,7 @@ public interface MemberRepository extends JpaRepository<Member, Integer> {
 	Member findByEmail(String email);
 	@Query(value ="select count(member_id) from  md_members",nativeQuery = true)
 	long count();
-	@Query(value ="SELECT  m.account,m.role,b.identify FROM  "
+	@Query(value ="SELECT  m.account,m.role,b.identify,m.avatar FROM  "
 			     + "md_books b,md_members m,md_relationship r "
 			     + "WHERE   m.member_id=r.member_id AND b.book_id=r.book_id "
 			     + "AND b.identify=?1  ",nativeQuery = true)

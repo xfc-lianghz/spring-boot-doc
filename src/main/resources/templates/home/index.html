@@ -28,12 +28,12 @@
                 <div class="list-item">
                     <dl class="manual-item-standard">
                         <dt>
-                            <a th:href="${book.identify}" target="_blank">
+                            <a th:href="'/docs/'+${book.identify}" target="_blank">
                                 <img th:src="${book.cover}" class="cover">
                             </a>
                         </dt>
                         <dd>
-                            <a th:href="${book.identify}" class="name" title="{{$item.BookName}}-{{$item.CreateName}}" th:text="${book.bookName}" target="_blank"></a>
+                            <a th:href="'/docs/'+${book.identify}" class="name" title="{{$item.BookName}}-{{$item.CreateName}}" th:text="${book.bookName}" target="_blank"></a>
                         </dd>
                         <dd>
                             <span class="author">
