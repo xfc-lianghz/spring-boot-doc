@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 /**
  * 启动类
- * 创建者 张志朋
+ * 创建者  小柒2012
  * 创建时间	2017年9月6日
  */
 @SpringBootApplication
