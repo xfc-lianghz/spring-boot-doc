@@ -185,7 +185,7 @@ CREATE TABLE `md_members` (
 
 /*Data for the table `md_members` */
 
-insert  into `md_members`(`member_id`,`account`,`password`,`auth_method`,`description`,`email`,`phone`,`avatar`,`role`,`status`,`create_time`,`create_at`,`last_login_time`) values (1,'admin','96e79218965eb72c92a549dd5a330112','local','','admin@iminho.me','','/images/headimgurl.jpg',0,0,'2017-09-06 19:35:25',0,NULL);
+insert  into `md_members`(`member_id`,`account`,`password`,`auth_method`,`description`,`email`,`phone`,`avatar`,`role`,`status`,`create_time`,`create_at`,`last_login_time`) values (1,'admin','96e79218965eb72c92a549dd5a330112','local','','345849402@qq.com','','/images/headimgurl.jpg',0,0,'2017-09-06 19:35:25',0,NULL);
 
 /*Table structure for table `md_migrations` */
 
