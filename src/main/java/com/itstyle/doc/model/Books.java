@@ -1,4 +1,6 @@
 package com.itstyle.doc.model;
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -51,9 +53,11 @@ public class Books {
 	@Column(nullable = false)
     private String theme;
 	@Column(nullable = false)
-    private Integer createTime;
+    private Timestamp createTime;
 	@Column(nullable = true)
     private Integer memberId;
+	@Column(nullable = false)
+    private Timestamp modifyTime;
 	@Column(nullable = true)
     private Integer version;
 	

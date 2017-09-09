@@ -8,8 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.itstyle.doc.common.utils.DateUtil;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,36 +15,40 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor     
 @AllArgsConstructor
 @Entity
-@Table(name = "md_members" )
-public class Member {
+@Table(name = "md_documents" )
+public class Documents {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "member_id", nullable = false)
-	private Integer memberId;
+	@Column(name = "document_id", nullable = false)
+	private Integer documentId;
 	@Column(nullable = false)
-    private String account;
+    private String documentName;
 	@Column(nullable = false)
-    private String password;
+    private String identify;
 	@Column(nullable = false)
-    private String authMethod="local";
+    private Integer bookId;
 	@Column(nullable = true)
-    private String description="";
+    private Integer parentId;
 	
 	@Column(nullable = false)
-    private String email;
+    private Integer orderSort;
 	@Column(nullable = false)
-    private String phone;
+    private String markdown;
 	@Column(nullable = true)
-    private String avatar="/images/headimgurl.jpg";
+    private String release;
 	@Column(nullable = false)
-    private Integer role=2;
+    private String content;
 	
 	@Column(nullable = false)
-    private Integer status=1;
+    private Timestamp createTime;
 	@Column(nullable = false)
-    private Timestamp createTime=DateUtil.getTimestamp();
+    private Integer memberId;
 	@Column(nullable = false)
-    private Integer createAt=0;
+    private Timestamp modifyTime;
 	@Column(nullable = true)
-    private Timestamp lastLoginTime;
+    private Integer modify_at;
+	@Column(nullable = true)
+    private Integer version;
+	
+	
 }

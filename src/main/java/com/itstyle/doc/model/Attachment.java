@@ -17,36 +17,30 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor     
 @AllArgsConstructor
 @Entity
-@Table(name = "md_members" )
-public class Member {
+@Table(name = "md_attachment" )
+public class Attachment {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "member_id", nullable = false)
-	private Integer memberId;
+	@Column(name = "attachment_id", nullable = false)
+	private Integer attachmentId;
 	@Column(nullable = false)
-    private String account;
+    private Integer bookId;
 	@Column(nullable = false)
-    private String password;
+    private Integer documentId;
 	@Column(nullable = false)
-    private String authMethod="local";
+    private String fileName;
 	@Column(nullable = true)
-    private String description="";
+    private String filePath;
 	
 	@Column(nullable = false)
-    private String email;
+    private Double fileSize;
 	@Column(nullable = false)
-    private String phone;
-	@Column(nullable = true)
-    private String avatar="/images/headimgurl.jpg";
+    private String httpPath;
 	@Column(nullable = false)
-    private Integer role=2;
+    private String fileExt;
 	
-	@Column(nullable = false)
-    private Integer status=1;
 	@Column(nullable = false)
     private Timestamp createTime=DateUtil.getTimestamp();
 	@Column(nullable = false)
     private Integer createAt=0;
-	@Column(nullable = true)
-    private Timestamp lastLoginTime;
 }
