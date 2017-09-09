@@ -108,3 +108,5 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 ## 友情提示
 
 spring-boot-doc作为一个新手入门级别的项目，前提必须熟知spring-boot、thymeleaf、Jpa、vuejs等相关技术，开发过程中并不能保证所有功能的正常使用。
+
+如果想使用MinDoc，请移步安装教程：[安利一款接口文档在线管理系统-MinDoc](https://blog.52itstyle.com/archives/1557/)
