@@ -45,6 +45,8 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 ##项目结构
 
      
+```
+     
 ├─src
 │  ├─main
 │  │  ├─java
@@ -89,6 +91,8 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 │  │      └─WEB-INF
 │  │              web.xml
 │  │                                       
+
+```                             
 
 
 
