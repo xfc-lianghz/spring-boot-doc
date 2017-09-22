@@ -1,10 +1,15 @@
 package com.itstyle.doc.common.utils;
+/**
+ * 参数封装
+ * 创建者 小柒2012
+ * 创建时间	2017年9月22日
+ *
+ */
+public class Result {
+	private String code;
+	private String msg;
 
-public class Result{
-    private String code;
-    private String msg;
-    
-    public Result() {
+	public Result() {
 		super();
 	}
 
@@ -14,21 +19,20 @@ public class Result{
 		this.msg = msg;
 	}
 
-
 	public String getCode() {
-        return code;
-    }
+		return code;
+	}
 
-    public void setCode(String code) {
-        this.code = code;
-    }
+	public void setCode(String code) {
+		this.code = code;
+	}
 
-    public String getMsg() {
-        return msg;
-    }
+	public String getMsg() {
+		return msg;
+	}
 
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
 
 }
