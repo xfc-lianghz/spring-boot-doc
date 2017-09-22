@@ -47,4 +47,16 @@ public class SettingController {
 		 }
 		 return result;
     }
+	@RequestMapping(value="modfiyUser",method=RequestMethod.POST)
+    public @ResponseBody Result modfiyUser(String email,String phone,String description,HttpServletRequest request) {
+		 logger.info("修改用户信息 ");
+		 Member member = (Member) request.getSession().getAttribute(Constans.CURRENT_USER);
+		 Result result = new Result();
+		 member.setEmail(email);
+		 member.setPhone(phone);
+		 member.setDescription(description);
+		 memberRepository.save(member);
+		 result.setCode(Constans.SUCCESS);
+		 return result;
+    }
 }

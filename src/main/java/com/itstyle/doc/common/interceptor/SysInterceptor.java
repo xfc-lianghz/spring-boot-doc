@@ -22,8 +22,8 @@ public class SysInterceptor implements HandlerInterceptor {
             throws Exception {  
     	Member user = (Member) request.getSession().getAttribute(Constans.CURRENT_USER);
     	if(user==null){
-    		response.sendRedirect(request.getContextPath()+"/index");
-    		return false;
+    		//response.sendRedirect(request.getContextPath()+"/index");
+    		return true;
     	}else{
     		return true;// 只有返回true才会继续向下执行，返回false取消当前请求  
     	}

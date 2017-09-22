@@ -32,7 +32,7 @@
                 </div>
                 <div class="box-body" style="padding-right: 200px;">
                     <div class="form-left">
-                        <form role="form" method="post" id="memberInfoForm">
+                        <form role="form" method="post" id="memberInfoForm" action="setting/modfiyUser">
                             <div class="form-group">
                                 <label>用户名</label>
                                 <input type="text" class="form-control disabled" th:value="${session.member.account}" disabled>
@@ -131,10 +131,10 @@
             },
             success : function (res) {
                 $("button[type='submit']").button('reset');
-                if(res.errcode === 0){
+                if(res.code === "success"){
                     showSuccess("保存成功");
                 }else{
-                    showError(res.message);
+                    showError(res.msg);
                 }
             }
         });
