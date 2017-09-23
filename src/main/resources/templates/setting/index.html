@@ -9,6 +9,8 @@
     <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
     <link th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
     <link th:href="@{/css/main.css}" rel="stylesheet">
+    <link th:href="@{/webuploader/webuploader.css}" rel="stylesheet">
+    <link th:href="@{/cropper/2.3.4/cropper.css}" rel="stylesheet">
     <script th:src="@{/jquery/1.12.4/jquery.min.js}"></script>
     <!-- <script th:src="@{/html5shiv/3.7.3/html5shiv.min.js}"></script>
     <script th:src="@{/respond.js/1.4.2/respond.min.js}"></script> -->
@@ -143,9 +145,9 @@
             var uploader = WebUploader.create({
                 auto: false,
                 swf: '/webuploader/Uploader.swf',
-                server: '{{urlfor "SettingController.Upload"}}',
+                server: 'setting/upload',
                 pick: "#filePicker",
-                fileVal : "image-file",
+                fileVal : "file",
                 fileNumLimit : 1,
                 compress : false,
                 accept: {

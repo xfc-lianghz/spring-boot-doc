@@ -1,4 +1,6 @@
 package com.itstyle.doc.web;
+import java.io.File;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -7,7 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.itstyle.doc.common.constans.Constans;
 import com.itstyle.doc.common.utils.MD5Util;
@@ -58,5 +62,23 @@ public class SettingController {
 		 memberRepository.save(member);
 		 result.setCode(Constans.SUCCESS);
 		 return result;
+    }
+	@RequestMapping(value="upload")
+    public @ResponseBody Result upload(@RequestParam("file")MultipartFile sortPicImg,HttpServletRequest request) {
+		logger.info("用户上传头像 ");
+		Result result = new Result();
+		try {
+			Member member = (Member) request.getSession().getAttribute(Constans.CURRENT_USER);
+			File targetFile = new File("D:\\"+member.getMemberId()+"_"+sortPicImg.getOriginalFilename());
+			if (!targetFile.exists()) {
+				targetFile.mkdirs();
+			}
+			sortPicImg.transferTo(targetFile);
+			result.setCode(Constans.SUCCESS);
+		} catch (Exception e) {
+			e.printStackTrace();
+			result.setCode(Constans.ERROR);
+		}
+		return result;
     }
 }
