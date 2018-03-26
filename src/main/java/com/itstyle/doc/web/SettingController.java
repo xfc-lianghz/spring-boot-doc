@@ -1,11 +1,16 @@
 package com.itstyle.doc.web;
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.itstyle.doc.common.constans.Constans;
+import com.itstyle.doc.common.utils.FileUtil;
 import com.itstyle.doc.common.utils.MD5Util;
 import com.itstyle.doc.common.utils.Result;
 import com.itstyle.doc.model.Member;
@@ -22,6 +28,9 @@ import com.itstyle.doc.repository.MemberRepository;
 @RequestMapping(value = "setting")
 public class SettingController {
 	private static final Logger logger = LoggerFactory.getLogger(SettingController.class);
+	
+	@Value("${web.upload.path}")
+    private String uploadPath;
 	
 	@Autowired
 	MemberRepository memberRepository;
@@ -64,17 +73,35 @@ public class SettingController {
 		 return result;
     }
 	@RequestMapping(value="upload")
-    public @ResponseBody Result upload(@RequestParam("file")MultipartFile sortPicImg,HttpServletRequest request) {
+    public @ResponseBody Result upload(@RequestParam("file")MultipartFile[] files,HttpServletRequest request) {
 		logger.info("用户上传头像 ");
 		Result result = new Result();
 		try {
 			Member member = (Member) request.getSession().getAttribute(Constans.CURRENT_USER);
-			File targetFile = new File("D:\\"+member.getMemberId()+"_"+sortPicImg.getOriginalFilename());
-			if (!targetFile.exists()) {
-				targetFile.mkdirs();
-			}
-			sortPicImg.transferTo(targetFile);
-			result.setCode(Constans.SUCCESS);
+	        //多文件上传
+	        if(files!=null && files.length>=1) {
+	            BufferedOutputStream bw = null;
+	            try {
+	                String fileName = files[0].getOriginalFilename();
+	                //判断是否有文件(实际生产中要判断是否是音频文件)
+	                if(StringUtils.isNoneBlank(fileName)) {
+	                    //创建输出文件对象
+	                    File outFile = new File(uploadPath + Constans.AVATAR_PATH + Constans.SF_FILE_SEPARATOR + member.getMemberId()+ FileUtil.getFileType(fileName));
+	                    //拷贝文件到输出文件对象
+	                    FileUtils.copyInputStreamToFile(files[0].getInputStream(), outFile);
+	                }
+	                result.setCode(Constans.SUCCESS);
+	            } catch (Exception e) {
+	                e.printStackTrace();
+	                result.setCode(Constans.ERROR);
+	            } finally {
+	                try {
+	                    if(bw!=null) {bw.close();}
+	                } catch (IOException e) {
+	                    e.printStackTrace();
+	                }
+	            }
+	        }
 		} catch (Exception e) {
 			e.printStackTrace();
 			result.setCode(Constans.ERROR);
