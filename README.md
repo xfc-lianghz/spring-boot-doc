@@ -115,6 +115,8 @@ spring-boot-doc的前身是[MinDoc](https://git.oschina.net/longfei6671/godoc)�
 
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0911/111538_ab5c7454_87650.png "10.png")
 
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0923/174242_a0ff7bf1_87650.png "1234.png")
+
 ## 友情提示
 
 
